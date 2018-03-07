@@ -1,0 +1,21 @@
+The initialization block runs before constructor, This can be used to set the default value when there are multiple constructors
+The position of the block is important, 
+	Ex1
+		String c = "Blue" ;
+		
+		{
+			c= "White";
+		}
+		//c will be white
+		
+	Ex2	
+		{
+			c= "White";
+		}
+		
+		String c = "Blue" ;
+		// c will be created with null , then applied the value white and then the default value Blue.
+		// c will be Blue
+		
+		
+	

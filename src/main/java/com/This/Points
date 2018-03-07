@@ -1,0 +1,29 @@
+This keyword
+============
+This used to tell the compile to use the object variable. If not specified , compiler will infer it by looking at the object creation
+Please note that the infer will only happen if the variable names are different
+modify(String color, String type) {
+		this();  //This calls the Car() constructor and executes the car count 
+		color = color;
+		type = type;
+	}
+
+color and color points to the same variable, 
+When ever a method is called , the method gets a frame in stack which holds all the variables. In this case when modify is called ,
+It gets a frame in stack that holds color and type .
+When the statement color = color is executed, the system treats it as local variable in frame.To avoid this and tell the 
+compiler to use object variable use this keyword.
+
+
+Chaining of constructors
+========================
+this(); can be used to call the other constructor with in the class, please note that this() has to be this first statement in the constructor ,
+chaining needs to be performed. 
+
+	Car(String color, String type) {
+		this();  //This calls the Car() constructor and executes the car count 
+		this.color = color;
+		this.type = type;
+	}
+
+	

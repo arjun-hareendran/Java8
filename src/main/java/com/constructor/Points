@@ -1,0 +1,8 @@
+There will a default constructor if you don't specify one . 
+You can specify the constructor with no argument and call super method as well
+The class can have multiple constructor and depending upon the argument , the method will be executed
+The constructor has to be public, There isn't a need to mention the public key word
+The constructor shouldn't have a return type, if it has then it becomes a method and not constructor.
+If you have specified a constructor with argument , then you cannot create a object with out argument, the default constructor wont be provided
+	Ex : new Car("White","Maruti") ; new Car();
+	new Car() will fail.

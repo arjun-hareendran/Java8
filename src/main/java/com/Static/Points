@@ -1,0 +1,39 @@
+Static variable
+===============
+
+THe static variable are created when class is loaded .
+	Example: Car mycar ; 
+		With this code the static variable will loaded.
+		
+The variable is reference with class name and not object name
+	Example: Car.carcount
+	
+You also can use object to reference, will throw a warning.
+
+Please note that the carcount variable is associated with the class and not the instance. There is special place in Heap for classes and
+static variable reside along with class. 	
+
+
+Stack is used for reference objects.
+	Car mycar = new Car(); 
+	mycar lives in Stack and in heap you will have all the methods and variable associated with car.
+	
+
+
+Static Method
+=============
+
+Use static keyword. Same rules applies as static variables.
+Cannot use non-static variables in static methods. Object variables cannot be used.
+
+Null pointer exception is thrown for static classes.
+	
+	Math m = null;
+    double result = m.floor(28.15); // Confusing code, but it works.
+    
+
+Static initialization Block
+========================
+
+It will only exuecute once and not for all the object creation
+You can have multiple blocks in the same code.
